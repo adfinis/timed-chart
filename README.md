@@ -1,6 +1,7 @@
-timed
-=====
-Chart for Timed application
+# timed
+
+## Introduction
+This chart runs a [timed](https://github.com/adfinis-sygroup/timed-frontend) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 Current chart version is `0.2.2`
 
@@ -8,6 +9,13 @@ Source code can be found here:
 * timed-frontend: https://github.com/adfinis-sygroup/timed-frontend
 * timed-backend: https://github.com/adfinis-sygroup/timed-backend
 
+## Prerequisites
+
+* Kubernetes 1.17+
+* PV provisioner support in the underlying infrastructure
+* Helm 3
+
+## Installing the Chart
 To install the chart with the release name `my-release` run the following command:
 
 ```bash
