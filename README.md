@@ -3,7 +3,7 @@
 ## Introduction
 This chart runs a [timed](https://github.com/adfinis-sygroup/timed-frontend) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
-Current chart version is `0.2.2`
+Chart releases can be listed on the [releases](https://github.com/adfinis-sygroup/timed-chart/releases) page.
 
 Source code can be found here:
 * timed-frontend: https://github.com/adfinis-sygroup/timed-frontend
@@ -20,14 +20,14 @@ To install the chart with the release name `my-release` run the following comman
 
 ```bash
 $ helm repo add timed https://adfinis-sygroup.github.io/timed-chart
-$ helm install timed/timed--set ingress.hosts={"test-timed.k8s-dev.sycloud.ch"} --name my-release
+$ helm install my-release timed/timed--set ingress.hosts={"test-timed.example.com"}
 ```
-The command deploys Timed on the Kubernetes cluster in the default configuration and sets an ingress hostname for external access.
+The command deploys Timed on a Kubernetes cluster and sets an ingress hostname for external access.
 
 For simple testing without any persistence you can run the following:
 
 ```bash
-$ helm install --set ingress.hosts={"test-timed.k8s-dev.sycloud.ch"} --set postgresql.persistence.enabled=false --name test-release timed/timed
+$ helm install my-release timed/timed --set ingress.hosts={"test-timed.example.com"} --set postgresql.persistence.enabled=false
 `
 ```
 
