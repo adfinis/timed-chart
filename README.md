@@ -4,7 +4,9 @@ Chart for Timed application
 
 Current chart version is `0.2.2`
 
-Source code can be found [here](https://github.com/adfinis-sygroup/timed-frontend)
+Source code can be found here:
+* timed-frontend: https://github.com/adfinis-sygroup/timed-frontend
+* timed-backend: https://github.com/adfinis-sygroup/timed-backend
 
 To install the chart with the release name `my-release` run the following command:
 
