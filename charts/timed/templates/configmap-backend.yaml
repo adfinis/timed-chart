@@ -9,7 +9,7 @@ data:
   EMAIL_URL: {{ .Values.backend.settings.emailUrl | quote }}
   DJANGO_ALLOWED_HOSTS: {{ join "," .Values.ingress.hosts }}
   DJANGO_HOST_DOMAIN: {{ index .Values.ingress.hosts 0 }}
-  DJANGO_HOST_PROTOCOL: http
+  DJANGO_HOST_PROTOCOL: {{ ternary "https" "http" .Values.ingress.tls | quote }}
   DJANGO_DEFAULT_FROM_EMAIL: {{ .Values.backend.settings.emailFrom | quote }}
   DJANGO_SERVER_EMAIL: {{ .Values.backend.settings.serverEmail | quote }}
   DJANGO_DATABASE_NAME: {{ .Values.postgresql.postgresqlDatabase | quote }}
