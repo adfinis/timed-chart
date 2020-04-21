@@ -1,4 +1,4 @@
-# timed
+# Timed Application
 
 ## Introduction
 This chart runs a [timed](https://github.com/adfinis-sygroup/timed-frontend) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
