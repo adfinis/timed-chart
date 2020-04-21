@@ -94,11 +94,11 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts: []
-  #  - timed.domain.com
+  #  - timed-test.example.com
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
-  #      - chart-example.local
+  #      - timed-test.example.com
 
 postgresql:
   enabled: true
