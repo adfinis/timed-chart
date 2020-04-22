@@ -2,12 +2,15 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 backend:
+  # backend.replicaCount -- Number of Backend replicas
   replicaCount: 1
   image:
+    # bakcne.image.repository -- Backend image name
     repository: adfinissygroup/timed-backend
      # Specify a tag to override which version of timed to deploy.
      # If no tag is specified the appVersion from Chart.yaml is used as tag.
      # tag:
+    # backend.image.pullPolicy -- Backend image pull policy
     pullPolicy: IfNotPresent
   service:
     # Specifiy secret for authentication.
