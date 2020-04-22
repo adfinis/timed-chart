@@ -16,6 +16,7 @@ backend:
     # Specifiy secret for authentication.
     # If not random token will be generated
     # secret:
+    # backend.service.name -- Backend service name
     name: timed-backend
     type: ClusterIP
     externalPort: 80
