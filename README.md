@@ -94,7 +94,7 @@ $ helm delete my-release
 | frontend.service.type | string | `"ClusterIP"` | Frontend service type |
 | ingress.annotations | object | `{}` | Ingress annotations |
 | ingress.enabled | bool | `false` | Enable ingress |
-| ingress.hosts[0] | string | `"chart-example.local"` | Ingress hostname |
+| ingress.hosts | list | `[]` | Ingress hostnames |
 | ingress.tls | list | `[]` | Ingress TLS parameter |
 | postgresql.enabled | bool | `true` | Enable [Bitnami Postgresql chart](https://github.com/bitnami/charts/tree/master/bitnami/postgresql/) |
 | postgresql.image.tag | string | `"12.2.0"` | Image tag of Postgres |
