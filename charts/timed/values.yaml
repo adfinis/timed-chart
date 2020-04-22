@@ -48,6 +48,7 @@ backend:
     emailUrl: smtp://localhost:25
     emailFrom: webmaster@chart-example.local
     serverEmail: webmaster@chart-example.local
+    workReportPath: /etc/workreport
 
 frontend:
   replicaCount: 1
