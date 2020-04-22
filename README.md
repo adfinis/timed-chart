@@ -39,7 +39,6 @@ To uninstall/delete the `my-release` deployment:
 $ helm delete my-release
 ```
 
-
 ## Chart Requirements
 
 | Repository | Name | Version |
