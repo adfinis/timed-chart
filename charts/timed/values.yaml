@@ -156,5 +156,5 @@ postgresql:
   # postgresql.postgresqlPassword -- Set a password for PostgreSQL
   # postgresqlPassword: s3cr3t
   image:
-    # postgresql.image.tag -- PostgreSQL chart version to use
+    # postgresql.image.tag -- PostgreSQL image version to use
     tag: 12.2.0
