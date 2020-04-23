@@ -3,7 +3,7 @@ name: timed
 type: application
 description: Chart for Timed application
 version: 0.3.3
-appVersion: v0.12.1
+appVersion: v0.13.1
 home: https://github.com/adfinis-sygroup/timed-frontend
 keywords:
   - timed
